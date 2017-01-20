@@ -7,11 +7,13 @@ public class Snippet {
 		    
 	        Scanner scan = new Scanner(System.in);
 	        int num  = Integer.parseInt(scan.nextLine());
-	        for(int j=0;j<num;j++){
-	            for(int i=1;i<=num;i++){
-	                System.out.print(i<num-j?" ":"#");
-	            }
-	            System.out.println("");
+	        if(num >= 1 && num <= 100){		        
+		        for(int j=0;j<num;j++){
+		            for(int i=1;i<=num;i++){
+		                System.out.print(i<num-j?" ":"#");
+		            }
+		            System.out.println("");
+		        }
 	        }
 	        scan.close();
 	    }
